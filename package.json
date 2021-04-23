@@ -13,10 +13,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "BUILD_PATH=_site PUBLIC_URL=$BASEURL react-scripts build",
+    "build": "PUBLIC_URL=$BASEURL BUILD_PATH=_site react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "federalist": "npm run build"
+    "federalist": "npm run federalist:build",
+    "federalist:build": "npm run build"
   },
   "eslintConfig": {
     "extends": [
